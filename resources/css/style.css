@@ -31,6 +31,10 @@
 .u_b_lightgrey { background-color: #d8d8d8; }
 .u_grey { color: #9b9b9b; }
 .u_icon { height: 32px; }
+.u_flex_center {
+    display: flex;
+    align-items: center;
+}
 
 /* Specific classes */
 
@@ -48,8 +52,6 @@ a {
 
 li {
     list-style-type: none;
-    display: flex;
-    align-items: center;
 }
 
 .content {
@@ -64,9 +66,7 @@ li {
     background-color: white;
     position: fixed;
     width: 100%;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .ca_logo a {
@@ -79,8 +79,6 @@ li {
 }
 
 .ca_logo {
-    display: flex;
-    align-items: center;
     padding-left: 24px;
 }
 
@@ -91,7 +89,7 @@ li {
 /* Banner */
 
 .banner {
-    height: 200px;
+    height: 2000px;
     background-color: #d8d8d8;
 }
 
