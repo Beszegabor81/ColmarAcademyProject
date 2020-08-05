@@ -1,8 +1,14 @@
+/* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
     color: #4a4a4a;
 }
+
+/* Font faces */
 
 @font-face {
     font-family: "Avenir_Regular";
@@ -28,9 +34,12 @@
 
 .u_bold { font-weight: bold;}
 .u_lightgrey { color: #d8d8d8; }
-.u_b_lightgrey { background-color: #d8d8d8; }
+.u_blightgrey { background-color: #d8d8d8; }
 .u_grey { color: #9b9b9b; }
+.u_center { text-align: center; }
 .u_icon { height: 32px; }
+.u_w60 { width: 60%; }
+.u_p_32_24 { padding: 32px 24px; }
 .u_flex_center {
     display: flex;
     align-items: center;
@@ -40,18 +49,21 @@
 
 .u_icon {
     height: 32px;
+    fill: tomato;
+}
+
+h1 {
+    font-family: "Avenir_Bold";
+    font-size: 36px;
+    padding-bottom: 24px;
+}
+
+h4 {
+    padding-bottom: 24px;
 }
 
 p {
     font-family: "Avenir_Regular";
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style-type: none;
 }
 
 .content {
@@ -88,12 +100,35 @@ li {
 
 /* Banner */
 
-.banner {
-    height: 2000px;
-    background-color: #d8d8d8;
+.banner_image {
+    width: 100%;
+}
+
+.banner_text h4{
+    font-family: "Avenir_Demi";
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #4a4a4a;
+    justify-content: center;
+}
+
+.btn p {
+    color: white;
+    padding: 8px;
 }
 
 /* Media Querry */
+
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 26px;
+    }
+    .banner_text h4 {
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .u_mobile_hidden{
@@ -104,6 +139,23 @@ li {
     }
     ul {
         justify-content: space-around;
+    }    
+    h1 {
+        font-size: 36px;
+    }
+    .banner_text {
+        padding: 32px 16px;
+    }
+    .banner_text h1 {
+        padding-bottom: 32px;
+    }
+    .banner_text h4 {
+        font-size: 20px;
+        padding-bottom: 24px;
+    }
+    .btn {
+        width: 100%;
+        background-color: #9b9b9b;
     }
 }
 
@@ -116,5 +168,8 @@ li {
     }
     .navbar {
         padding: 0 24px;
+    }
+    .btn {
+        max-width: 300px;
     }
 }
