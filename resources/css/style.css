@@ -38,18 +38,21 @@
 .u_grey { color: #9b9b9b; }
 .u_center { text-align: center; }
 .u_icon { height: 32px; }
-.u_w60 { width: 60%; }
+.u_w60 { width: 60%; box-sizing: border-box; }
+.u_w100 { width: 100%; box-sizing: border-box; }
 .u_p_32_24 { padding: 32px 24px; }
+.u_column { flex-direction: column; }
+.u_flex { display: flex; }
 .u_flex_center {
     display: flex;
     align-items: center;
 }
+.u_text_link { color: #4a90e2; }
 
 /* Specific classes */
 
 .u_icon {
     height: 32px;
-    fill: tomato;
 }
 
 h1 {
@@ -59,11 +62,14 @@ h1 {
 }
 
 h4 {
+    font-family: "Avenir_Demi";
+    font-size: 22px;
     padding-bottom: 24px;
 }
 
 p {
     font-family: "Avenir_Regular";
+    padding-bottom: 8px;
 }
 
 .content {
@@ -77,7 +83,6 @@ p {
     height: 64px;
     background-color: white;
     position: fixed;
-    width: 100%;
     justify-content: space-between;
 }
 
@@ -94,20 +99,7 @@ p {
     padding-left: 24px;
 }
 
-.navbar {
-    display: flex;
-}
-
 /* Banner */
-
-.banner_image {
-    width: 100%;
-}
-
-.banner_text h4{
-    font-family: "Avenir_Demi";
-    font-size: 20px;
-}
 
 .btn {
     background-color: #4a4a4a;
@@ -115,9 +107,50 @@ p {
 }
 
 .btn p {
-    color: white;
     padding: 8px;
+    color: white;
 }
+
+/* Informations */
+
+.information_main_image {
+    padding-bottom: 32px;
+}
+
+.information_cards_container {
+    width: 40%;
+    margin-top: 16px;
+}
+
+.informations_main_container .note {
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 24px;
+}
+
+.information_card {
+    padding: 16px;
+}
+
+.information_card img {
+    width: 35%;
+}
+
+.information_card_text {
+    box-sizing: border-box;
+    width: 65%;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.information_card_text h4 {
+    padding-bottom: 8px;
+}
+
+.information_card:hover {
+    background-color: #d8d8d8;
+}
+
 
 /* Media Querry */
 
@@ -125,7 +158,7 @@ p {
     h1 {
         font-size: 26px;
     }
-    .banner_text h4 {
+    h4 {
         font-size: 16px;
     }
 }
@@ -149,7 +182,7 @@ p {
     .banner_text h1 {
         padding-bottom: 32px;
     }
-    .banner_text h4 {
+    h4 {
         font-size: 20px;
         padding-bottom: 24px;
     }
@@ -157,6 +190,21 @@ p {
         width: 100%;
         background-color: #9b9b9b;
     }
+    .information_cards_container {
+        width: 100%;
+        margin-top: 0;
+    }
+    .information_card {
+        flex-direction: column;
+    }
+    .information_card img{
+        width: 100%;
+    }
+    .information_card_text {
+        margin-top: 24px;
+        margin-left: 16px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {

@@ -10,14 +10,14 @@
     
     <!--Navigation bar-->
 
-    <header class="u_flex_center navbarheader">
+    <header class="u_flex_center u_w100 navbarheader">
         <div class="u_flex_center u_mobile_hidden ca_logo">
             <a href="#"><img class="u_flex_center u_icon" src="./resources/images/ic-logo.svg" alt="Colmar Academy logo"></a>
             <a class="u_bold u_mobile_hidden" href="#">COLMAR</a>
             <a class="u_grey u_mobile_hidden" href="#">ACADEMY</a>
         </div>
         <nav>
-            <ul class="navbar">
+            <ul class="u_flex navbar">
                 <li class="u_flex_center u_desktop_hidden">
                     <a class="u_flex_center" href="#">
                         <img class="u_icon" src="./resources/images/ic-logo.svg" alt="Colmar Academy logo">
@@ -53,11 +53,11 @@
         <!--Banner-->
 
         <section class="u_flex_center u_blightgrey banner">
-            <div class="u_flex_center u_p_32_24 u_w60 u_mobile_hidden banner_image_container">
-                <img class="banner_image" src="./resources/images/banner.jpg" alt="Banner image">
+            <div class="u_flex_center u_p_32_24 u_w60 u_mobile_hidden">
+                <img class="u_w100 banner_image" src="./resources/images/banner.jpg" alt="Banner image">
             </div>
             <div class="banner_text_container">
-                <img class="u_desktop_hidden banner_image" src="./resources/images/banner.jpg" alt="Banner image">
+                <img class="u_desktop_hidden u_w100 banner_image" src="./resources/images/banner.jpg" alt="Banner image">
                 <div class="banner_text u_p_32_24">
                     <h1>Learn something<br>new everyday</h1>
                     <h4>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</h4>
@@ -70,7 +70,45 @@
             </div>
         </section>
 
+        <!--Informations-->
 
+        <section class="u_flex informations">
+            <div class="u_flex u_w60 u_column u_p_32_24 u_mobile_hidden informations_main_container">
+                <img class="u_w100 information_main_image" src="./resources/images/information-main.jpg" alt="Information main image">
+                <h1>It doesn't hurt to keep practicing</h1>
+                <p>"Vivamus et dui et lorem placerat rutrum vel eget turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ut iaculis libero, nec feugiat neque. Curabitur non consequat ante. Duis vitae elementum tortor."</p>
+                <p class="note">Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+            <div class="u_flex u_column information_cards_container">
+               <div class="u_flex u_w100 information_card">
+                    <img class="u_mobile_hidden" src="./resources/images/information-orientation.jpg" alt="Orientation date image desktop">
+                    <img class="u_desktop_hidden u_w100" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation date image mobile">
+                    <div class="u_flex u_column information_card_text">
+                        <h4>Orientation date</h4>
+                        <p>Tue 10/11 & wed 10/12 8am-3pm</p>
+                        <a href="#"><p class="u_text_link">Read more</p></a>
+                    </div>
+                </div>
+                <div class="u_flex u_w100 information_card">
+                    <img class="u_mobile_hidden" src="./resources/images/information-campus.jpg" alt="Our campus image desktop">
+                    <img class="u_desktop_hidden u_w100" src="./resources/images/information-campus-mobile.jpg" alt="OOur campus image mobile">
+                    <div class="u_flex u_column information_card_text">
+                        <h4>Our campus</h4>
+                        <p>Find which campus is colse by you</p>
+                        <a href="#"><p class="u_text_link">Read more</p></a>
+                    </div>
+                </div><div class="u_flex u_w100 information_card">
+                    <img class="u_mobile_hidden" src="./resources/images/information-guest-lecture.jpg" alt="Our guest lecture image desktop">
+                    <img class="u_desktop_hidden u_w100" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Special guest lecture image mobile">
+                    <div class="u_flex u_column information_card_text">
+                        <h4 class="u_desktop_hidden">Special guest lecture</h4>
+                        <h4 class="u_mobile_hidden">Our guest lecture</h4>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <a href="#"><p class="u_text_link">Read more</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </div>
 
