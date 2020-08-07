@@ -48,6 +48,11 @@
     align-items: center;
 }
 .u_text_link { color: #4a90e2; }
+.u_note {
+    font-family: Arial;
+    font-size: 12px;
+}
+.u_text_center { text-align: center; }
 
 /* Specific classes */
 
@@ -99,6 +104,10 @@ p {
     padding-left: 24px;
 }
 
+.navbar a:hover {
+    color: #9b9b9b;
+}
+
 /* Banner */
 
 .btn {
@@ -122,13 +131,13 @@ p {
     margin-top: 16px;
 }
 
-.informations_main_container .note {
-    font-family: Arial;
-    font-size: 12px;
-    padding-top: 24px;
+.informations_main_container .u_note{
+    padding: 0;
+    margin-top: 24px;
 }
 
 .information_card {
+    align-items: center;
     padding: 16px;
 }
 
@@ -151,17 +160,64 @@ p {
     background-color: #d8d8d8;
 }
 
+/* Start learning */
+
+.startlearning {
+    padding: 32px 16px;
+}
+
+.startlearning h1{
+    padding-bottom: 16px;
+}
+
+.startlearning_cards_container {
+    flex-wrap: wrap;
+}
+
+.startlearning_card {
+    margin-bottom: 8px;
+}
+
+.startlearning_card_text h4{
+    padding-bottom: 0;
+}
+
+.startlearning_card_text {
+    padding: 16px;
+}
+
+/* Footer */
+
+.footer_container {
+    justify-content: space-between;
+    margin: 16px 24px;
+}
+
+.footer_container p {
+    padding: 0;
+}
+    /* Ez már nem is lényeges.. */
+.footer_container a {
+    padding-left: 16px;
+}
 
 /* Media Querry */
+
+/* Mert néhány sor furán tört ebben a tartományban */
 
 @media screen and (max-width: 980px) {
     h1 {
         font-size: 26px;
     }
+    .title_h1{
+        font-size: 36px;
+    }
     h4 {
         font-size: 16px;
     }
 }
+
+/* Media Querry - Mobile*/
 
 @media screen and (max-width: 768px) {
     .u_mobile_hidden{
@@ -204,8 +260,15 @@ p {
         margin-top: 24px;
         margin-left: 16px;
     }
-
+    .startlearning_card {
+        background-color: #d8d8d8;
+    }
+    .startlearning_card h4{
+        padding-bottom: 16; /*A mockupon mindenhol 16px szerepel, alul pedig 24. Ez nekem fura. A 0-val mindenhol 16 lesz a padding, ha a mockuphoz szeretnék igazodni, akkor ide 8at kellene írni*/
+    }
 }
+
+/* Media Querry - Desktop*/
 
 @media screen and (min-width: 768px) {
     .u_desktop_hidden{
@@ -219,5 +282,23 @@ p {
     }
     .btn {
         max-width: 300px;
+    }
+    .startlearning {
+        background-color: #d8d8d8;
+    }
+    .startlearning{
+        padding: 32px 56px;
+    }
+    .startlearning h1{
+        padding-bottom: 16px;
+    }
+    .startlearning_card {
+        box-sizing: border-box;
+        padding: 16px;
+        flex: 0 33.33%;
+    }
+    .startlearning_card_text {
+        padding: 16px;
+        background-color: white;
     }
 }
